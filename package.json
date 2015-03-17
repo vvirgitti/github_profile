@@ -1,0 +1,30 @@
+{
+  "name": "github_profile",
+  "version": "1.0.0",
+  "description": "Create a github user profile card",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:vvirgitti/github_profile.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vvirgitti/github_profile/issues"
+  },
+  "homepage": "https://github.com/vvirgitti/github_profile",
+  "dependencies": {
+    "grunt": "^0.4.5"
+  },
+  "devDependencies": {
+    "bower": "^1.3.12",
+    "grunt": "^0.4.5",
+    "grunt-contrib-jasmine": "^0.8.2",
+    "grunt-contrib-jshint": "^0.11.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "jasmine": "^2.2.1"
+  }
+}

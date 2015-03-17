@@ -1,0 +1,19 @@
+{
+  "name": "github_profile",
+  "version": "0.0.0",
+  "homepage": "https://github.com/vvirgitti/github_profile",
+  "authors": [
+    "Vanessa <virgitti@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.3"
+  }
+}
