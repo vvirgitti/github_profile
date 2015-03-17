@@ -15,5 +15,6 @@ $(document).ready(function() {
     }).always(function() {
       $('input.username').val('');
       });
+      info;
   });
 });
