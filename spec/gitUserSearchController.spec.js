@@ -31,6 +31,8 @@ describe('GitUserSearchController', function() {
     ];
 
     it('displays search results', function() {
+      scope.searchTerm = 'hello';
+      scope.doSearch();
       expect(scope.searchResult.items).toEqual(items);
     });
   });
