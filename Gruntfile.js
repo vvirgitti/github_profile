@@ -23,9 +23,17 @@ module.exports = function(grunt){
     karma: {
       unit: {
         configFile: 'karma.conf.js',
-        files: ['spec/*.spec.js'],
+        files: ['/*.spec.js'],
         background: true,
         singleRun: false
+      }
+    },
+
+    mocha_casperjs: {
+      options: {
+      },
+      files: {
+        src : ['/test/homepage_feature.js']
       }
     },
 
@@ -35,7 +43,9 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-jasmine');
   grunt.loadNpmTasks('grunt-karma');
+  grunt.loadNpmTasks('grunt-mocha-casperjs');
 
-  grunt.registerTask('default', ['jshint', 'nodeunit']);
+
+  grunt.registerTask('default', ['jshint']);
 
 };

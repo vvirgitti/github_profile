@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en" ng-app="GitUserSearch">
+  <head>
+    <meta charset="utf-8">
+    <title>Github user search</title>
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular-resource/angular-resource.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/gitUserSearchController.js"></script>
+    <link rel="stylesheet" href="../public/css/index.css"></script>
+  </head>
+
+  <body ng-controller="GitUserSearchController">
+
+    <div class="page-header">
+      <img src="../public/images/logo.png">
+      <h1>Welcome to GitHub profile search!</h1>
+  </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="input-group">
+              <input type="text" ng-model="searchTerm" ng-change="doSearch()" ng-model-options="{ updateOn: 'default blur', debounce: {'default': 500, 'blur': 0} }"class="form-control" placeholder="Enter a GitHub username...">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="button" ng-click="doSearch()">Search</button>
+              </span>
+            </div><!-- /input-group -->
+          </div><!-- /.col-lg-6 -->
+        </div><!-- /.row -->
+      <br>
+
+        <ul class="list-group" ng-repeat="user in searchResult.items">
+          <div class="panel panel-default">
+            <div class="panel-body">
+          <li>
+            <img ng-src="{{user.avatar_url}}">
+            <a ng-href="{{user.html_url}}">Username: {{user.login}}</a><br>
+            <a ng-href="{{individualData.followers}}">Followers: {{ individualData.followers }}</a><br>
+            <a ng-href="{{individualData.public_repos}}">Public repos: {{ individualData.public_repos }}</a>
+          </div>
+        </div>
+          </li>
+        </ul>
+
+  </body>
+</html>

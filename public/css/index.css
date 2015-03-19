@@ -1,0 +1,16 @@
+ul > li > img {
+  height: 100px;
+  width: 100px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.row {
+  margin: 10px;
+}
+
+.page-header {
+  margin: 10px;
+}
