@@ -5,7 +5,7 @@ describe('homepage', function(){
 
   it('has a welcome message', function(){
     casper.then(function(){
-      expect("body").to.have.text("Welcome to GitHub profile search!");
+      expect(".page-header").to.contain.text("Welcome to GitHub profile search!");
     });
   });
 });
